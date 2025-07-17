@@ -6,7 +6,7 @@ import * as THREE from "three";
 const Background = () => {
   return (
     <>
-      {/* <Environment preset="sunset" /> */}
+      <Environment preset="sunset" />
       <Sphere scale={[100, 100, 100]} rotation-y={Math.PI / 2}>
         <LayerMaterial
           color={"#ffffff"}

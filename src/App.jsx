@@ -10,6 +10,7 @@ function App() {
           fov: 30,
         }}
       >
+        <ambientLight intensity={0.7} />
         <color attach="background" args={["#ececec"]} />
         <Experience />
       </Canvas>
