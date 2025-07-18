@@ -5,12 +5,7 @@ import { ScrollControls } from "@react-three/drei";
 function App() {
   return (
     <>
-      <Canvas
-        camera={{
-          position: [0, 0, 5],
-          fov: 30,
-        }}
-      >
+      <Canvas>
         <ambientLight intensity={0.7} />
         <color attach="background" args={["#ececec"]} />
         <ScrollControls pages={5} damping={0.3}>

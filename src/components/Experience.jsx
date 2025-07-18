@@ -1,4 +1,4 @@
-import { Float, PerspectiveCamera, useScroll } from "@react-three/drei";
+import { Clouds, Float, PerspectiveCamera, useScroll } from "@react-three/drei";
 import { Background } from "./Background";
 import { Plane } from "./Plane";
 import { Cloud } from "./Cloud";
@@ -132,7 +132,7 @@ export const Experience = () => {
 
       {/* clouds */}
 
-      <Cloud opacity={0.5} scale={[0.3, 0.3, 0.3]} position={[-2, 1, 3]} />
+      <Clouds opacity={0.5} scale={[0.3, 0.3, 0.3]} position={[-2, 1, 3]} />
       <Cloud opacity={0.5} scale={[0.2, 0.3, 0.4]} position={[1.5, -0.5, -2]} />
       <Cloud
         opacity={0.7}
