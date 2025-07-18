@@ -3,7 +3,7 @@ import { Gradient, LayerMaterial } from "lamina";
 
 import * as THREE from "three";
 
-const Background = () => {
+export const Background = () => {
   return (
     <>
       <Environment preset="sunset" />
@@ -15,8 +15,9 @@ const Background = () => {
           side={THREE.BackSide}
         >
           <Gradient
-            colorA={"#357ca1"}
+            colorA={"orange"}
             colorB={"white"}
+            contrast={2}
             axes={"y"}
             start={0}
             end={-0.5}
@@ -26,5 +27,3 @@ const Background = () => {
     </>
   );
 };
-
-export default Background;

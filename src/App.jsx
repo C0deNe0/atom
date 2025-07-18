@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./components/Experience";
+import { ScrollControls } from "@react-three/drei";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       >
         <ambientLight intensity={0.7} />
         <color attach="background" args={["#ececec"]} />
-        <Experience />
+        <ScrollControls pages={5} damping={0.3}>
+          <Experience />
+        </ScrollControls>
       </Canvas>
     </>
   );
